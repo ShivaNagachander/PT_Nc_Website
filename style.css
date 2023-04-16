@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  background-image: url('https://raw.githubusercontent.com/ShivaNagachander/PT_Nc_Website/main/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  font-size: 22.4px;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: cyan;
+  margin-bottom: 45px;
+  margin-top: 5px;
+  font-size: 25px;
+
+}
+nav {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-family:'Rubik', sans-serif;
+}
+
+button {
+  border-radius: 50%;
+  height: 80px;
+  width: 150px;
+  background-color: yellow;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+main {
+  max-width: 1200px;
+  margin: 1 auto;
+}
+
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_content h1 {
+  font-size: 55px;
+  line-height: 1;
+  text-align: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-display: swap;
+  animation: hero_content 10s infinite;
+  color: darkblue;
+}
+.hero_content h4 {
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  animation: hero_content 10s infinite;
+  }
+
+  @keyframes hero_content  {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(50px);
+    }
+  }
+
+.hero_image img {
+  border-radius: 5px;
+  height: 400px;
+  width: 450px; ;
+}
+
+.aim-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.image-box {
+  margin: 0 20px;
+}
+
+.image-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.image-box h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box {
+  flex-basis: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color:rgb(168, 235, 244);
+  border-radius:20px;
+}
+
+.service-box:hover{
+  background-color:yellow;
+}
+
+.center {
+  text-align: center;
+}
+
+.tech-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust height as needed */
+}
+
+.tech-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tech-container:hover {
+background-color: yellow;
+}
+.prototypes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: lightgreen;
+}
+
+.prototype-box {
+  margin: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.prototype-box img {
+  height: 105px;
+  width: 105px;
+ 
+}
+
+.prototype-box h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.prototype-box p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.prototype-box:hover {
+ background-color: yellow;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px ;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-section:hover {
+background-color: lightgreen;
+}
+.about-section img {
+height: 125px;
+width: 125px;
+}
+
+.lead-box {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.module {
+  width: 300px;
+  text-align: center;
+  margin: 32px 0;
+}
+.module.img {
+  width: 45px;
+  height: 45px;
+}
+
+.center-module {
+  order: 2;
+}
+
+.left-module {
+  order: 1;
+}
+
+.right-module {
+  order: 3;
+}
+
+
+
+
+.contact-section {
+  text-align: center;
+  margin: 50px 0;
+  background-color: aquamarine;
+}
+
+
+.contact-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  margin: 0 20px;
+}
+
+.contact-item img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-item p {
+  font-size: 18px;
+}
+
+.query-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.query-form label {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.query-form input,
+.query-form textarea {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.query-form textarea {
+  height: 150px;
+}
+
+.query-form button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.query-form button:hover {
+  background-color: #2980b9;
+}
+
+
+.under-construction {
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.under-construction :hover{
+  background-color: paleturquoise;
+ 
+}
